@@ -25,7 +25,7 @@ const Page = () => (
       <Feedback />
     </div>
     <Footer />
-  </div>
+  </div>  
 );
 
 export default Page;

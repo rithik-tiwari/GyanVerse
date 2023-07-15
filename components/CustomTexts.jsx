@@ -28,7 +28,7 @@ export const TypingBtwText = ({ title, textStyles }) => (
     ))}
   </motion.p>
 );
-export const TypingHeadingText = ({ title, textStyles }) => (
+export const TypingHeadingText = ({ title }) => (
   <motion.p
     variants={textContainer}
     className={styles.heroHeading}
