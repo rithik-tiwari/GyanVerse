@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
+import Image from 'next/image';
 
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
@@ -20,7 +21,7 @@ const Footer = () => (
           Enter the Gyanverse
         </h4>
         <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#11b219] rounded-[32px] gap-[12px]">
-          <img
+          <Image
             src="/headset.svg"
             alt="headset"
             className="w-[24px] h-[24px] object-contain"
@@ -45,12 +46,12 @@ const Footer = () => (
           <div className="flex gap-4">
             {socials.map((social) => (
               <a href={social.whereToURL} target='_blank' rel='noreferrer'>
-                <img
+                <Image
                   key={social.name}
                   src={social.url}
                   alt={social.name}
                   className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
+                />
               </a>
             ))}
           </div>
